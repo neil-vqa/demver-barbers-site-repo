@@ -1,3 +1,6 @@
+
+//page navigation
+
 let links = document.querySelectorAll('nav a');
 
 links.forEach(function(link){
@@ -48,6 +51,8 @@ close.addEventListener('click',function() {
 	}
 });
 
+//materialize components
+
 $(document).ready(function(){
 	$(".button-collapse").sideNav({
 		closeOnClick: true,
@@ -61,5 +66,17 @@ $(document).ready(function(){
 	
 });
 
+//map
 
+var mymap = L.map('map').setView([40.7580, -73.9855], 14);
+
+		L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmVpbHRoZWdyZWF0ZXN0IiwiYSI6ImNrM2ZqMmhvNjAzN2QzbW5uaHQyamo5NGkifQ.l53kgbZcDGY8U8xHkSWv0w', {
+			maxZoom: 18,
+			id: 'mapbox/streets-v11',
+			tileSize: 512,
+			zoomOffset: -1
+		}).addTo(mymap);
+
+		L.marker([40.7580, -73.9855]).addTo(mymap)
+		.bindPopup("<b>We are here!</b><br><p><b>Demver Barbers</b><br>Lorem Building<br>Ipsum Street</p>").openPopup();
 

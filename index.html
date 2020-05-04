@@ -8,8 +8,10 @@
 	 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	 <link rel="shortcut icon" href="./static/favicon.ico">
-	 <link rel="stylesheet" href="./static/custom.css">
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+	<link rel="shortcut icon" href="./static/pics/favicon.ico">
+	<link rel="stylesheet" href="./static/custom.css">
+	 
 	 
 </head>
 <body>
@@ -106,7 +108,11 @@
 					</div>
 					<div class="col s12 m6 pull-m6 book-desc">
 						<div class="col s12">
-							<img src="./static/pics/service-banner.png" alt="" class="responsive-img">
+							<picture>
+								<source srcset="./static/pics/service-banner.webp" type="image/webp">
+								<source srcset="./static/pics/service-banner.png" type="image/png"> 
+								<img src="./static/pics/service-banner.png" alt="service" class="responsive-img">
+							</picture>
 						</div>
 						<div class="col s12">
 							<p class="flow-text">Be at the comfort of your home.</p>
@@ -134,37 +140,53 @@
 			<div class="container section">
 				<div class="row who-white section valign-wrapper">
 					<div class="col s12 m4 offset-m1">
-						<img src="./static/pics/barber-man-1.jpg" alt="" class="responsive-img">
+						<picture>
+							<source srcset="./static/pics/barber-man-1.webp" type="image/webp">
+							<source srcset="./static/pics/barber-man-1.jpg" type="image/jpeg"> 
+							<img src="./static/pics/barber-man-1.jpg" alt="" class="responsive-img">
+						</picture>
 					</div>
 					<div class="col s12 m4 offset-m1">
-						<p class="flow-text">Miguel</p>
+						<p class="flow-text">Miguel Anton</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
 					</div>
 				</div>
 				<div class="row who-dark section valign-wrapper">
 					<div class="col s12 m4 offset-m1">
-						<img src="./static/pics/barber-man-2.jpg" alt="" class="responsive-img">
+						<picture>
+							<source srcset="./static/pics/barber-man-2.webp" type="image/webp">
+							<source srcset="./static/pics/barber-man-2.jpg" type="image/jpeg"> 
+							<img src="./static/pics/barber-man-2.jpg" alt="" class="responsive-img">
+						</picture>
 					</div>
 					<div class="col s12 m4 offset-m1">
-						<p class="flow-text">Ian</p>
+						<p class="flow-text">Christoph Ian</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
 					</div>
 				</div>
 				<div class="row who-white section valign-wrapper">
 					<div class="col s12 m4 offset-m1">
-						<img src="./static/pics/stylist-woman-1.jpg" alt="" class="responsive-img">
+						<picture>
+							<source srcset="./static/pics/stylist-woman-1.webp" type="image/webp">
+							<source srcset="./static/pics/stylist-woman-1.jpg" type="image/jpeg"> 
+							<img src="./static/pics/stylist-woman-1.jpg" alt="" class="responsive-img">
+						</picture>
 					</div>
 					<div class="col s12 m4 offset-m1">
-						<p class="flow-text">Jane</p>
+						<p class="flow-text">Jane Christina</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
 					</div>
 				</div>
 				<div class="row who-dark section valign-wrapper">
 					<div class="col s12 m4 offset-m1">
-						<img src="./static/pics/stylist-woman-2.jpg" alt="" class="responsive-img">
+						<picture>
+							<source srcset="./static/pics/stylist-woman-2.webp" type="image/webp">
+							<source srcset="./static/pics/stylist-woman-2.jpg" type="image/jpeg"> 
+							<img src="./static/pics/stylist-woman-2.jpg" alt="" class="responsive-img">
+						</picture>
 					</div>
 					<div class="col s12 m4 offset-m1">
-						<p class="flow-text">Esther</p>
+						<p class="flow-text">Felicita Young</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
 					</div>
 				</div>
@@ -180,8 +202,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="container section who-white">
-				<div class="row">
+			<div class="container section">
+				<div class="row section who-white">
 					<div class="col s12 m6">
 						<img src="./static/pics/gallery/pic1.jpg" alt="" class="responsive-img materialboxed hoverable">
 					</div>
@@ -221,18 +243,18 @@
 								<span class="card-title center-align">Men</span>
 								<div class="divider teal"></div>
 								<ul class="center-align">
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>	
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
 								</ul>
 								<div class="divider teal"></div>
 								<p class="center-align">Lorem ipsum dolor sit amet</p>
@@ -245,18 +267,18 @@
 								<span class="card-title center-align">Women</span>
 								<div class="divider teal"></div>
 								<ul class="center-align">
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
 								</ul>
 								<div class="divider teal"></div>
 								<p class="center-align">Lorem ipsum dolor sit amet</p>
@@ -269,18 +291,18 @@
 								<span class="card-title center-align">More</span>
 								<div class="divider teal"></div>
 								<ul class="center-align">
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>Lorem ipsum</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
-									<li>consectetur adipiscing elit</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
+									<li>consectetur adipiscing</li>
 								</ul>
 								<div class="divider teal"></div>
 								<p class="center-align">Lorem ipsum dolor sit amet</p>
@@ -300,12 +322,34 @@
 					</div>
 				</div>
 			</div>
+			<div class="container">
+				<div class="row section who-white valign-wrapper">
+					<div class="col s12 m5 offset-m1">
+						<div id="map" class="map-div"></div>
+					</div>
+					<div class="col s12 m4 offset-m1">
+						<p class="flow-text">We are just around the corner.</p>
+						<p>Lorem ipsum Avenue</p>
+						<p>You may also call us:</p>
+						<p>
+							<i class="tiny material-icons">local_phone</i>
+							123 45 678 | 456 78 234
+						</p>
+						<p>Shop is open:</p>
+						<p>
+							<i class="tiny material-icons">store</i>
+							9 AM to 6 PM | Mondays to Sundays
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
 		
 	</main>
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <script type="text/javascript" src="./static/materialize.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+     <script type="text/javascript" src="./static/materialize.min.js"></script>
 	<script type="text/javascript" src="./static/app.js"></script>
 </body>
 </html>
