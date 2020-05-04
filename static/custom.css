@@ -1,0 +1,113 @@
+:root {
+	--main-bg-color: #222222;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #f3f3f3;
+	background-color: var(--main-bg-color);
+}
+
+.front {
+	font-family: 'Pacifico', cursive;
+	font-size: 7.5rem;
+}
+
+.subhead {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+}
+
+.panels {
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	height: 93%;
+	bottom: 0;
+	right: 0;
+	background-color: var(--main-bg-color);
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: 0.3s;
+}
+
+.panel-top {
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	height: 7%;
+	top: 0;
+	right: 0;
+	background-color: var(--main-bg-color);
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+.closebtn {
+	position: absolute;
+	top: 4px;
+	right: 20px;
+	font-size: 15px;
+	background-color: var(--main-bg-color);
+	color: #f3f3f3;
+	padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+}
+
+.closebtn:hover {
+	color: #d9534f;
+}
+
+#booking {
+	background-image: url("./pics/home-service.jpg");
+	background-position: center;
+}
+
+.book-desc {
+	background-color: rgba(255, 255, 255, 0.85);
+	color: #333333;
+}
+
+.form-fill {
+	background-color: rgba(34, 34, 34, 0.9);
+	padding-bottom: 20px !important;
+}
+
+#who {
+	background-image: url("./pics/who-we.jpg");
+	background-position: center;
+}
+
+
+
+
+
+
+
+/**Media**/
+
+@media screen and (max-width: 768px) {
+	.closebtn {
+		top: 1px;
+		left: 10px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.subhead {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.front {
+		font-size: 4.8rem;
+	}
+	
+	.subhead {
+		font-size: 1.2rem;
+	}
+}
+
+

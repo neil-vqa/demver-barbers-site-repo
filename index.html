@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demver Barbers</title>
+	
+	 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	 <link rel="shortcut icon" href="./static/favicon.ico">
+	 <link rel="stylesheet" href="./static/custom.css">
+	 
+</head>
+<body>
+	<header>
+		<nav class="transparent z-depth-0">
+		<div class="nav-wrapper">
+			<div class="container">
+				<a href="#" class="brand-logo"><i class="material-icons">content_cut</i></a>
+				<a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#" id="book-btn">BOOK APPOINTMENT</a></li>
+					<li><a href="#" id="who-btn">WHO WE ARE</a></li>
+					<li><a href="#" id="gallery-btn">GALLERY</a></li>
+					<li><a href="#" id="prices-btn">PRICES</a></li>
+					<li><a href="#" id="location-btn">LOCATION</a></li>
+				</ul>
+				<ul class="side-nav teal darken-3" id="mobile">
+					<li><a href="#" class="white-text teal darken-4">Welcome!</a></li>
+					<li><a href="#" id="book-btn" class="white-text">Book Appointment</a></li>
+					<li><a href="#" id="who-btn" class="white-text">Who We Are</a></li>
+					<li><a href="#" id="gallery-btn" class="white-text">Gallery</a></li>
+					<li><a href="#" id="prices-btn" class="white-text">Prices</a></li>
+					<li><a href="#" id="location-btn" class="white-text">Location</a></li>
+				</ul>
+			</div>
+		</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container">
+			<p class="front center-align">Demver Barbers</p>
+			<p class="subhead center-align">~ Serving heads since 2018 ~</p>
+		</section>
+		
+		<div class="panel-top" id="close-panel">
+			<span class="closebtn">&#60; BACK &#62;</span>
+		</div>
+		
+		<section class="panels" id="booking">
+			<div class="container section">
+				<div class="row">
+					<div class="col s12 m6 push-m6 form-fill">
+						<p class="flow-text center-align">Home Service Request</p>
+						<form>
+							<div class="input-field">
+							  <i class="material-icons prefix">person</i>
+							  <input type="text" id="name">
+							  <label for="name">Your Name</label>
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">face</i>
+								<select>
+								 <option value="" disabled selected>Your Gender</option>
+								 <option value="1">Male</option>
+								 <option value="2">Female</option>
+								</select>
+								<label>Gender</label>
+							</div>
+							<div class="input-field">
+							  <i class="material-icons prefix">phone_android</i>
+							  <input type="text" id="mobile">
+							  <label for="mobile">Your Mobile No.</label>
+							</div>
+							<div class="input-field">
+							  <i class="material-icons prefix">email</i>
+							  <input type="email" id="email">
+							  <label for="email">Your Email</label>
+							</div>
+							<div class="input-field">
+							  <i class="material-icons prefix">home</i>
+							  <input type="text" id="address">
+							  <label for="address">Your Address</label>
+							</div>
+							<div class="input-field">
+							  <i class="material-icons prefix">date_range</i>
+							  <input type="text" id="date" class="datepicker">
+							  <label for="date">Choose when will be your haircut.</label>
+							</div>
+							<div class="input-field">
+							  <i class="material-icons prefix">access_time</i>
+							  <input type="text" id="time" class="timepicker">
+							  <label for="time">Choose the time for your haircut.</label>
+							</div>
+							<div class="input-field">
+							  <i class="material-icons prefix">note_add</i>
+							  <textarea id="textarea1" class="materialize-textarea"></textarea>
+							  <label for="textarea1">Your questions, requests, concerns...</label>
+							</div>
+							<div class="input-field center">
+								<button class="btn">Send</button>
+							</div>
+						</form>
+					</div>
+					<div class="col s12 m6 pull-m6 book-desc">
+						<div class="col s12">
+							<img src="./static/pics/service-banner.png" alt="" class="responsive-img">
+						</div>
+						<div class="col s12">
+							<p class="flow-text">Be at the comfort of your home.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="panels" id="who">
+			Who We Are
+		</section>
+		
+		<section class="panels" id="gallery">
+			Gallery
+		</section>
+		
+		<section class="panels" id="prices">
+			Prices
+		</section>
+		
+		<section class="panels" id="location">
+			Location
+		</section>
+		
+	</main>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="./static/materialize.js"></script>
+	<script type="text/javascript" src="./static/app.js"></script>
+</body>
+</html>
