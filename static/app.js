@@ -57,6 +57,7 @@ $(document).ready(function(){
 	$('select').material_select();
 	$('.datepicker').pickadate();
 	$('.timepicker').pickatime();
+	$('.materialboxed').materialbox();
 	
 });
 

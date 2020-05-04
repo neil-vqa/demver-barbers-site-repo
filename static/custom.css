@@ -62,11 +62,13 @@ body {
 #booking {
 	background-image: url("./pics/home-service.jpg");
 	background-position: center;
+	background-size: cover;
 }
 
 .book-desc {
 	background-color: rgba(255, 255, 255, 0.85);
 	color: #333333;
+	padding-top: 20px !important;
 }
 
 .form-fill {
@@ -77,8 +79,35 @@ body {
 #who {
 	background-image: url("./pics/who-we.jpg");
 	background-position: center;
+	background-size: cover;
 }
 
+.who-white {
+	background-color: rgba(255, 255, 255, 0.85);
+	color: #333333;
+}
+
+.who-dark {
+	background-color: rgba(34, 34, 34, 0.9);
+}
+
+#gallery {
+	background-image: url("./pics/gallery.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#prices {
+	background-image: url("./pics/prices.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#location {
+	background-image: url("./pics/location.jpg");
+	background-position: center;
+	background-size: cover;
+}
 
 
 
@@ -97,6 +126,10 @@ body {
 @media screen and (max-width: 425px) {
 	.subhead {
 		font-size: 1.5rem;
+	}
+	
+	.valign-wrapper {
+		display: block;
 	}
 }
 
