@@ -45,11 +45,16 @@ body {
 
 .closebtn {
 	position: absolute;
+	top: 5px;
 	right: 15px;
+	border: 2px solid #222;
+	border-radius: 15px;
+	color: white;
+	padding: 3px 15px;
 }
 
 .closebtn:hover {
-	color: #d9534f;
+	border: 2px solid #616161;
 }
 
 .book-desc {
