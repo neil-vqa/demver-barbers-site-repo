@@ -45,14 +45,7 @@ body {
 
 .closebtn {
 	position: absolute;
-	top: 4px;
-	right: 20px;
-	font-size: 15px;
-	background-color: var(--main-bg-color);
-	color: #f3f3f3;
-	padding: 10px 15px;
-	border: none;
-	cursor: pointer;
+	right: 15px;
 }
 
 .closebtn:hover {
@@ -62,12 +55,12 @@ body {
 .book-desc {
 	background-color: rgba(255, 255, 255, 0.85);
 	color: #333333;
-	padding-top: 20px !important;
+	padding: 50px !important;
 }
 
 .form-fill {
 	background-color: rgba(34, 34, 34, 0.9);
-	padding-bottom: 20px !important;
+	padding: 50px !important;
 }
 
 .who-white {
@@ -82,6 +75,10 @@ body {
 .map-div {
 	width: 100%; 
 	height: 300px;
+}
+
+.contact-det {
+	padding: 10px !important;
 }
 
 

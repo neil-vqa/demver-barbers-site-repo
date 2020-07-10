@@ -50,7 +50,7 @@
 		</section>
 		
 		<div class="panel-top" id="close-panel">
-			<span class="closebtn">&#60; BACK &#62;</span>
+			<button class="closebtn btn-flat grey white-text">BACK</button>
 		</div>
 		
 		<section class="panels" id="booking">
@@ -61,7 +61,7 @@
 						<form name="Request Service" netlify>
 							<div class="input-field">
 							  <i class="material-icons prefix">person</i>
-							  <input type="text" id="name" name="Name">
+							  <input type="text" id="name" name="Name" required>
 							  <label for="name">Your Name</label>
 							</div>
 							<div class="input-field">
@@ -75,7 +75,7 @@
 							</div>
 							<div class="input-field">
 							  <i class="material-icons prefix">phone_android</i>
-							  <input type="text" id="mobile" name="Mobile">
+							  <input type="text" id="mobile" name="Mobile" required>
 							  <label for="mobile">Your Mobile No.</label>
 							</div>
 							<div class="input-field">
@@ -85,7 +85,7 @@
 							</div>
 							<div class="input-field">
 							  <i class="material-icons prefix">home</i>
-							  <input type="text" id="address" name="Address">
+							  <input type="text" id="address" name="Address" required>
 							  <label for="address">Your Address</label>
 							</div>
 							<div class="input-field">
@@ -118,9 +118,6 @@
 						</div>
 						<div class="col s12">
 							<p class="flow-text">Be at the comfort of your home.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit</p>
@@ -250,11 +247,7 @@
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
-									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
-									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
-									<li>consectetur adipiscing</li>
-									<li>consectetur adipiscing</li>
-									<li>consectetur adipiscing</li>
+
 									<li>consectetur adipiscing</li>
 									<li>consectetur adipiscing</li>
 								</ul>
@@ -274,13 +267,10 @@
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
-									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
-									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+
 									<li>consectetur adipiscing</li>
 									<li>consectetur adipiscing</li>
-									<li>consectetur adipiscing</li>
-									<li>consectetur adipiscing</li>
-									<li>consectetur adipiscing</li>
+
 								</ul>
 								<div class="divider teal"></div>
 								<p class="center-align">Lorem ipsum dolor sit amet</p>
@@ -298,13 +288,10 @@
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
 									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
-									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
-									<li><i class="tiny material-icons">check_circle</i> Lorem ipsum</li>
+
 									<li>consectetur adipiscing</li>
 									<li>consectetur adipiscing</li>
-									<li>consectetur adipiscing</li>
-									<li>consectetur adipiscing</li>
-									<li>consectetur adipiscing</li>
+
 								</ul>
 								<div class="divider teal"></div>
 								<p class="center-align">Lorem ipsum dolor sit amet</p>
@@ -330,18 +317,20 @@
 						<div id="map" class="map-div"></div>
 					</div>
 					<div class="col s12 m4 offset-m1">
-						<p class="flow-text">We are just around the corner.</p>
-						<p>Lorem ipsum Avenue</p>
-						<p>You may also call us:</p>
-						<p>
-							<i class="tiny material-icons">local_phone</i>
-							123 45 678 | 456 78 234
-						</p>
-						<p>Shop is open:</p>
-						<p>
-							<i class="tiny material-icons">store</i>
-							9 AM to 6 PM | Mondays to Sundays
-						</p>
+						<div class="contact-det">
+							<p class="flow-text">We are just around the corner.</p>
+							<p>Lorem ipsum Avenue</p>
+							<p>You may also call us:</p>
+							<p>
+								<i class="tiny material-icons">local_phone</i>
+								123 45 678 | 456 78 234
+							</p>
+							<p>Shop is open:</p>
+							<p>
+								<i class="tiny material-icons">store</i>
+								9 AM to 6 PM | Mondays to Sundays
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
